@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+PROJECT_PATH = os.path.split(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))[0]
+
+from modules import INSTALLED_MODULES
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -57,7 +60,7 @@ WSGI_APPLICATION = 'application.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(PROJECT_PATH, 'db.sqlite3'),
     }
 }
 
@@ -79,3 +82,27 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(PROJECT_PATH, 'static')
+
+# List of finder classes that know how to find static files in
+# various locations.
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
+
+# Additional locations of static files
+STATICFILES_DIRS = ()
+
+TEMPLATE_DIRS = ()
+
+MODULE_LOCATION = ('application', 'modules')
+MODULE_PATH = os.path.join(PROJECT_PATH, os.sep.join(segment for segment in MODULE_LOCATION))
+
+for module in INSTALLED_MODULES:
+    INSTALLED_APPS += ('%s.%s' % ('.'.join(segment for segment in MODULE_LOCATION), module),)
+    TEMPLATE_DIRS += (os.path.join(MODULE_PATH, module, 'templates'),)
+    if DEBUG:
+        STATICFILES_DIRS += (os.path.join(MODULE_PATH, module, 'static'),)
