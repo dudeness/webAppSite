@@ -14,6 +14,8 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+
 # Additional locations of static files
 STATICFILES_DIRS = ()
 
@@ -21,3 +23,14 @@ STATICFILES_DIRS = ()
 for module in INSTALLED_MODULES:
     if DEBUG:
         STATICFILES_DIRS += (os.path.join(MODULE_PATH, module, 'static'),)
+
+
+PIPELINE_JS = {
+    'vendor': {
+        'source_filenames': (
+          'vendor/jquery/*.js',
+          'vendor/lodash/*.js',
+        ),
+        'output_filename': 'compiled/vendor.min.js',
+    }
+}
