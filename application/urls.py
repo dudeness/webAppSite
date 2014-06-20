@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 
-from application.settings import base as settings
+from application.settings import config as settings
 from application.modules.web import views as web_views
 
 admin.autodiscover()
