@@ -1,0 +1,32 @@
+
+body > .bottom-wrapper {
+    height: auto;
+    min-height: 100%;
+}
+
+.bottom-wrapper {
+    position: relative;
+    margin-top: -$s-bottom-head;
+    height: 100%;
+
+    &.is-collapsed {
+        height: $s-bottom-head;
+        min-height: $s-bottom-head;
+        overflow: hidden;
+    }
+}
+
+.bottom-wrapper--content {
+}
+
+.bottom-wrapper__head {
+    position: absolute;
+    width: 100%;
+    height: $s-bottom-head;
+    background-color: cOrange03(0.9);
+}
+
+.bottom-wrapper__body {
+    padding-top: $s-bottom-head;
+
+}

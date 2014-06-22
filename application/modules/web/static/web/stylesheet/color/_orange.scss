@@ -1,0 +1,70 @@
+$c-orange-01:        #ff8a00;
+$c-orange-02:        #ff9105;
+$c-orange-03:        #ff9909;
+$c-orange-04:        #ffa00e;
+$c-orange-05:        #ffa713;
+$c-orange-06:        #ffae18;
+$c-orange-07:        #ffb61c;
+$c-orange-08:        #ffbd21; 
+$c-orange-09:        #ffc641;
+$c-orange-10:        #ffd060;
+$c-orange-11:        #ffd980;
+$c-orange-12:        #ffe3a0;
+$c-orange-13:        #ffecc0;
+$c-orange-14:        #fff6df;
+
+@function cOrange01($opacity: 1) {
+    @return rgba(red($c-orange-01),green($c-orange-01),blue($c-orange-01), $opacity);
+}
+
+@function cOrange02($opacity: 1) {
+    @return rgba(red($c-orange-02),green($c-orange-02),blue($c-orange-02), $opacity);
+}
+
+@function cOrange03($opacity: 1) {
+    @return rgba(red($c-orange-03),green($c-orange-03),blue($c-orange-03), $opacity);
+}
+
+@function cOrange04($opacity: 1) {
+    @return rgba(red($c-orange-04),green($c-orange-04),blue($c-orange-04), $opacity);
+}
+
+@function cOrange05($opacity: 1) {
+    @return rgba(red($c-orange-05),green($c-orange-05),blue($c-orange-05), $opacity);
+}
+
+@function cOrange06($opacity: 1) {
+    @return rgba(red($c-orange-06),green($c-orange-06),blue($c-orange-06), $opacity);
+}
+
+@function cOrange07($opacity: 1) {
+    @return rgba(red($c-orange-07),green($c-orange-07),blue($c-orange-07), $opacity);
+}
+
+@function cOrange08($opacity: 1) {
+    @return rgba(red($c-orange-08),green($c-orange-08),blue($c-orange-08), $opacity);
+}
+
+@function cOrange09($opacity: 1) {
+    @return rgba(red($c-orange-09),green($c-orange-09),blue($c-orange-09), $opacity);
+}
+
+@function cOrange10($opacity: 1) {
+    @return rgba(red($c-orange-10),green($c-orange-10),blue($c-orange-10), $opacity);
+}
+
+@function cOrange11($opacity: 1) {
+    @return rgba(red($c-orange-11),green($c-orange-11),blue($c-orange-11), $opacity);
+}
+
+@function cOrange12($opacity: 1) {
+    @return rgba(red($c-orange-12),green($c-orange-12),blue($c-orange-12), $opacity);
+}
+
+@function cOrange13($opacity: 1) {
+    @return rgba(red($c-orange-13),green($c-orange-13),blue($c-orange-13), $opacity);
+}
+
+@function cOrange14($opacity: 1) {
+    @return rgba(red($c-orange-14),green($c-orange-14),blue($c-orange-14), $opacity);
+}

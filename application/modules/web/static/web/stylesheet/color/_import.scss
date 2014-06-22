@@ -1,0 +1,7 @@
+$c-action: #222222;
+
+@function cAction($opacity: 1) {
+    @return rgba(red($c-action),green($c-action),blue($c-action), $opacity);
+}
+
+@import "orange";

@@ -6,6 +6,12 @@ body > .app-wrapper {
 .app-wrapper {
     height: 100%;
 
+    &.is-hidden {
+        height: $s-site-head;
+        min-height: $s-site-head;
+        overflow: hidden;
+        visibility: hidden;
+    }
 }
 
 .app-wrapper--content {
@@ -14,7 +20,9 @@ body > .app-wrapper {
 
 .app-wrapper__head {
     position: absolute;
+    width: 100%;
     height: $s-app-head;
+    background-color: cAction(1);
 }
 
 .app-wrapper__body {
