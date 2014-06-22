@@ -1,10 +1,21 @@
+{% load compressed %}
 <!DOCTYPE html>
 <html>
     <head>
+        {% compressed_css 'styles' %}
+        {% compressed_js 'vendor' %}
         <title>WebAppSite Base</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     </head>
     <body>
-        <h1>Demo Page</h1>
+        <div class="web-background">
+            <img src="/static/vendor/ubuntu-artwork/1280p/Reflections-Trenton_Fox.jpg" />
+        </div>
+        <div class="app-wrapper">
+            
+        </div>
+        <div class="site-wrapper">
+            
+        </div>
     </body>
 </html>

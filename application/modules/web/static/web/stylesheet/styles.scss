@@ -1,1 +1,23 @@
 @import "bootstrap";
+
+.web-background {
+    position: fixed;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+
+    img  {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        min-width: 50%;
+        min-height: 50%;
+        // -ms-transform: scale(0.5,0.5); /* IE 9 */
+        // -webkit-transform: scale(0.5,0.5); /* Chrome, Safari, Opera */
+        // transform: scale(0.5,0.5); /* Standard syntax */
+    }
+}

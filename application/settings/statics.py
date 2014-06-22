@@ -34,3 +34,12 @@ PIPELINE_JS = {
         'output_filename': 'compiled/vendor.min.js',
     }
 }
+
+PIPELINE_CSS = {
+    'styles': {
+        'source_filenames': (
+          'compiled/styles.css',
+        ),
+        'output_filename': 'compiled/styles.min.css',
+    },
+}
