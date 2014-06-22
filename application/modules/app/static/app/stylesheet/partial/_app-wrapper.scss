@@ -1,0 +1,23 @@
+body > .app-wrapper {
+    height: auto;
+    min-height: 100%;
+}
+
+.app-wrapper {
+    height: 100%;
+
+}
+
+.app-wrapper--content {
+    padding-bottom: $s-site-head;
+}
+
+.app-wrapper__head {
+    position: absolute;
+    height: $s-app-head;
+}
+
+.app-wrapper__body {
+    padding-top: $s-app-head;
+
+}
