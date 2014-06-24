@@ -14,12 +14,12 @@
             <img src="/static/vendor/ubuntu-artwork/1280p/Reflections-Trenton_Fox.jpg" />
         </div>
         {% for module,config in SECTION_MODULES.items %}
-        <div class="{{module}}-wrapper{% if config.toggled %} {{config.toggle_class}}{% endif %}" web-wrapper="{{module}}">
-            <div class="{{module}}-wrapper--content">
-                <div class="{{module}}-wrapper__head" web-wrapper-head>
+        <div class="{{module}}-section{% if config.toggled %} {{config.toggle_class}}{% endif %}" web-section="{{module}}">
+            <div class="{{module}}-section--content">
+                <div class="{{module}}-section__head" web-section-head>
                     the module head
                 </div>
-                <div class="{{module}}-wrapper__body" web-wrapper-body>
+                <div class="{{module}}-section__body" web-section-body>
                     the module bottom
                 </div>
             </div>

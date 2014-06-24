@@ -6,18 +6,18 @@
     color: #eeeeee;
 }
 
-@mixin wrapper-is-collapsed($s-wrapper-head) {
+@mixin section-is-collapsed($s-section-head) {
     &.is-collapsed {
-        height: $s-wrapper-head;
-        min-height: $s-wrapper-head;
+        height: $s-section-head;
+        min-height: $s-section-head;
         overflow: hidden;
     }
 }
 
-@mixin wrapper-is-hidden($s-wrapper-head) {
+@mixin section-is-hidden($s-section-head) {
     &.is-hidden {
-        height: $s-wrapper-head;
-        min-height: $s-wrapper-head;
+        height: $s-section-head;
+        min-height: $s-section-head;
         overflow: hidden;
         visibility: hidden;
     }

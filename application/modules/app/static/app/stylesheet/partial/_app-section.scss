@@ -1,21 +1,21 @@
-body > .app-wrapper {
+body > .app-section {
     height: auto;
     min-height: 100%;
 }
 
-.app-wrapper {
-    @include wrapper-is-hidden($s-site-head);
+.app-section {
+    @include section-is-hidden($s-site-head);
 
     @extend .container-fluid;
 
     height: 100%;
 }
 
-.app-wrapper--content {
+.app-section--content {
     padding-bottom: $s-site-head;
 }
 
-.app-wrapper__head {
+.app-section__head {
     @include make-row;
     @include font-dark;
 
@@ -25,7 +25,7 @@ body > .app-wrapper {
     background-color: cAction(1);
 }
 
-.app-wrapper__body {
+.app-section__body {
     @include make-row;
 
     padding-top: $s-app-head;

@@ -1,28 +1,28 @@
 
-body > .bottom-wrapper {
+body > .bottom-section {
     height: auto;
     min-height: 100%;
 }
 
-.bottom-wrapper {
-    @include wrapper-is-collapsed($s-bottom-head);
+.bottom-section {
+    @include section-is-collapsed($s-bottom-head);
 
     position: relative;
     margin-top: -$s-bottom-head;
     height: 100%;
 }
 
-.bottom-wrapper--content {
+.bottom-section--content {
 }
 
-.bottom-wrapper__head {
+.bottom-section__head {
     position: absolute;
     width: 100%;
     height: $s-bottom-head;
     background-color: cOrange03(0.9);
 }
 
-.bottom-wrapper__body {
+.bottom-section__body {
     padding-top: $s-bottom-head;
 
 }

@@ -1,28 +1,28 @@
 
-body > .site-wrapper {
+body > .site-section {
     height: auto;
     min-height: 100%;
 }
 
-.site-wrapper {
-    @include wrapper-is-collapsed($s-site-head);
+.site-section {
+    @include section-is-collapsed($s-site-head);
 
     position: relative;
     margin-top: -$s-site-head;
     height: 100%;
 }
 
-.site-wrapper--content {
+.site-section--content {
 }
 
-.site-wrapper__head {
+.site-section__head {
     position: absolute;
     width: 100%;
     height: $s-site-head;
     background-color: cOrange01(0.9);
 }
 
-.site-wrapper__body {
+.site-section__body {
     padding-top: $s-site-head;
 
 }
