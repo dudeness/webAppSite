@@ -20,5 +20,6 @@ if settings.DEBUG:
     )
 
 urlpatterns += patterns('',
+    url(r'^js/environment\.js$', web_views.EnvironmentJS.as_view()),
     url(r'^$', web_views.DemoPage.as_view()),
 )
