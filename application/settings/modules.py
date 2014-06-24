@@ -7,12 +7,15 @@ INSTALLED_MODULES = (
 
 SECTION_MODULES = {
     'app': {
-        'toggled': 'hidden',
+        'toggled': False,
+        'toggle_class': 'is-hidden',
     },
     'site': {
-        'toggled': 'collapsed',
+        'toggled': False,
+        'toggle_class': 'is-collapsed',
     },
     'bottom': {
-        'toggled': 'collapsed',
+        'toggled': True,
+        'toggle_class': 'is-collapsed',
     },
 }
