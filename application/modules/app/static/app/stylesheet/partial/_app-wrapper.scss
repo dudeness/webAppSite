@@ -4,14 +4,11 @@ body > .app-wrapper {
 }
 
 .app-wrapper {
-    height: 100%;
+    @include wrapper-is-hidden($s-site-head);
 
-    &.is-hidden {
-        height: $s-site-head;
-        min-height: $s-site-head;
-        overflow: hidden;
-        visibility: hidden;
-    }
+    @extend .container-fluid;
+
+    height: 100%;
 }
 
 .app-wrapper--content {
@@ -19,6 +16,9 @@ body > .app-wrapper {
 }
 
 .app-wrapper__head {
+    @include make-row;
+    @include font-dark;
+
     position: absolute;
     width: 100%;
     height: $s-app-head;
@@ -26,6 +26,7 @@ body > .app-wrapper {
 }
 
 .app-wrapper__body {
-    padding-top: $s-app-head;
+    @include make-row;
 
+    padding-top: $s-app-head;
 }

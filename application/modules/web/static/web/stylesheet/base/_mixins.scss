@@ -1,0 +1,24 @@
+@mixin font-light {
+    color: #222222;
+}
+
+@mixin font-dark {
+    color: #eeeeee;
+}
+
+@mixin wrapper-is-collapsed($s-wrapper-head) {
+    &.is-collapsed {
+        height: $s-wrapper-head;
+        min-height: $s-wrapper-head;
+        overflow: hidden;
+    }
+}
+
+@mixin wrapper-is-hidden($s-wrapper-head) {
+    &.is-hidden {
+        height: $s-wrapper-head;
+        min-height: $s-wrapper-head;
+        overflow: hidden;
+        visibility: hidden;
+    }
+}

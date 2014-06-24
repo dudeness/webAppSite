@@ -5,15 +5,11 @@ body > .bottom-wrapper {
 }
 
 .bottom-wrapper {
+    @include wrapper-is-collapsed($s-bottom-head);
+
     position: relative;
     margin-top: -$s-bottom-head;
     height: 100%;
-
-    &.is-collapsed {
-        height: $s-bottom-head;
-        min-height: $s-bottom-head;
-        overflow: hidden;
-    }
 }
 
 .bottom-wrapper--content {

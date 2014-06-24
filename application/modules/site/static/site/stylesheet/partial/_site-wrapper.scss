@@ -5,15 +5,11 @@ body > .site-wrapper {
 }
 
 .site-wrapper {
+    @include wrapper-is-collapsed($s-site-head);
+
     position: relative;
     margin-top: -$s-site-head;
     height: 100%;
-
-    &.is-collapsed {
-        height: $s-site-head;
-        min-height: $s-site-head;
-        overflow: hidden;
-    }
 }
 
 .site-wrapper--content {
