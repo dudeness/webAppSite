@@ -8,6 +8,7 @@ class DemoPage(TemplateView):
         context = super(DemoPage, self).get_context_data(**kwargs)
         context['INSTALLED_MODULES'] = settings.INSTALLED_MODULES
         context['SECTION_MODULES'] = settings.SECTION_MODULES
+        context['web_background_src'] = '/static/vendor/ubuntu-artwork/1280p/Reflections-Trenton_Fox.jpg'
         return context
 
 

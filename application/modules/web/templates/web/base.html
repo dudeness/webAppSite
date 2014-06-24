@@ -11,7 +11,7 @@
     </head>
     <body ng-controller="webController" ng-init="init()">
         <div class="web-background">
-            <img src="/static/vendor/ubuntu-artwork/1280p/Reflections-Trenton_Fox.jpg" />
+            <img src="{{web_background_src}}" />
         </div>
         {% for module,config in SECTION_MODULES.items %}
         <div 
