@@ -25,6 +25,10 @@ body > .app-section {
     background-color: cAction(1);
 }
 
+.app-section__toggle {
+    @include section-toggle;
+}
+
 .app-section__body {
     @include make-row;
 

@@ -22,6 +22,10 @@ body > .bottom-section {
     background-color: cOrange03(0.9);
 }
 
+.bottom-section__toggle {
+    @include section-toggle;
+}
+
 .bottom-section__body {
     padding-top: $s-bottom-head;
 

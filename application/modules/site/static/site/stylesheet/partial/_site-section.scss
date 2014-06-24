@@ -22,6 +22,10 @@ body > .site-section {
     background-color: cOrange01(0.9);
 }
 
+.site-section__toggle {
+    @include section-toggle;
+}
+
 .site-section__body {
     padding-top: $s-site-head;
 

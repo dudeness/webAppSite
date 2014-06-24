@@ -1,7 +1,13 @@
 'use strict';
 
 var environment = {
-    installedModules: [{% for module in INSTALLED_MODULES %}'{{module}}', {% endfor %}],
+    modules: [{% for module in INSTALLED_MODULES %}'{{module}}', {% endfor %}],
+    sections: {
+        {% for module,config in SECTION_MODULES.items %}{{module}}: {
+                toggleClass: '{{config.toggle_class}}'
+            },
+        {% endfor %}
+    },
     module: function(name) {
         return {
             template: {

@@ -20,6 +20,9 @@
             <div class="{{module}}-section--content">
                 <div class="{{module}}-section__head" web-section-head>
                     {% with module|add:'/section/head.html' as section_head %}{% include section_head %}{% endwith %}
+                    <div class="{{module}}-section__toggle is-toggled is-disabled" web-section-toggle="{{module}}">
+                        <div class="section-toggle-pointer">TP</div>
+                    </div>
                 </div>
                 <div class="{{module}}-section__body" web-section-body>
                     {% with module|add:'/section/body.html' as section_head %}{% include section_head %}{% endwith %}

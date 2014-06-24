@@ -22,3 +22,16 @@
         visibility: hidden;
     }
 }
+
+@mixin section-toggle {
+    @include make-xs-column(1);
+    @include make-xs-column-offset(11);
+
+    height: 100%;
+    background-color: red;
+
+    &.is-disabled {
+        cursor: default !important;
+        opacity: 0.4;
+    }
+}
