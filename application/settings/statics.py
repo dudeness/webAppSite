@@ -35,6 +35,18 @@ PIPELINE_JS = {
     }
 }
 
+for module in INSTALLED_MODULES:
+    PIPELINE_JS.update({
+        module: {
+            'source_filenames': (
+                module + '/javascript/controller/*.js',
+                module + '/javascript/directive/*.js',
+                module + '/javascript/*.js',
+            ),
+            'output_filename': 'compiled/' + module + '.min.js',
+        }
+    })
+
 PIPELINE_CSS = {
     'styles': {
         'source_filenames': (
