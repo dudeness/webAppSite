@@ -4,5 +4,6 @@ angular.module('#', [
     'ngResource',
     'ngAnimate',
 
-    '.web.controller'
+    '.web.controller',
+    '.web.directive.section'
     ]);

@@ -14,7 +14,9 @@
             <img src="/static/vendor/ubuntu-artwork/1280p/Reflections-Trenton_Fox.jpg" />
         </div>
         {% for module,config in SECTION_MODULES.items %}
-        <div class="{{module}}-section{% if config.toggled %} {{config.toggle_class}}{% endif %}" web-section="{{module}}">
+        <div 
+            class="{{module}}-section{% if config.toggled %} {{config.toggle_class}}{% endif %}" 
+            web-section="{{module}}">
             <div class="{{module}}-section--content">
                 <div class="{{module}}-section__head" web-section-head>
                     {% with module|add:'/section/head.html' as section_head %}{% include section_head %}{% endwith %}
