@@ -30,6 +30,8 @@ PIPELINE_JS = {
         'source_filenames': (
           'vendor/jquery/*.js',
           'vendor/lodash/*.js',
+          'vendor/angularjs/1.2.7/angular.min.js',
+          'vendor/angularjs/1.2.7/angular-*.min.js',
         ),
         'output_filename': 'compiled/vendor.min.js',
     }
