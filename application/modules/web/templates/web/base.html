@@ -17,10 +17,10 @@
         <div class="{{module}}-section{% if config.toggled %} {{config.toggle_class}}{% endif %}" web-section="{{module}}">
             <div class="{{module}}-section--content">
                 <div class="{{module}}-section__head" web-section-head>
-                    the module head
+                    {% with module|add:'/section/head.html' as section_head %}{% include section_head %}{% endwith %}
                 </div>
                 <div class="{{module}}-section__body" web-section-body>
-                    the module bottom
+                    {% with module|add:'/section/body.html' as section_head %}{% include section_head %}{% endwith %}
                 </div>
             </div>
         </div>
